@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <title>D3 Sample</title>
+    <meta http-equiv="refresh" content="5" >
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.1.1/d3.js"></script>
+  </head>
+  <body>
+
+    <p>KOMMENTAR Die Mehrheit der EU-Mitgliedsstaaten will sich</p>
+    <p> in der Frage der Flüchtlingsverteilung nicht bewegen und musste</p>
+    <p> das bisher auch nicht, kommentiert Paul Vorreiter.</p>
+    <p> Auch die aktuellen Vorschläge von Bundesinnenminister Horst Seehofer </p>
+    <p> (CSU) dürften da keinen Fortschritt bringen.
+    <p>EU-Flüchtlingspolitik „Allen Tendenzen entgegentreten, die</p>
+    <p> die zivile Seenotrettung kriminalisieren“
+    Schwabe (SPD)</p>
+    <p> Flüchtlingssituation in Griechenland Schande für EU
+    Lindholz (CS</p>
+    <p> U) „Was wir nicht wollen, ist</p>
+    <p> ein deutscher Alleingang“</>
+
+    <script type="text/javascript">
+	    d3.select("body")
+  .selectAll("p")
+  .data([4, 8, 15, 16, 23, 42])
+  .enter().append("p")
+    .text(function(d) { return "I’m number " + d + "!"; });
+    </script>
+    
+  </body>
+</html>
